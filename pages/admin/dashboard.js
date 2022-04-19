@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import { MdDashboard, MdPerson } from "react-icons/md";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -136,14 +137,14 @@ const Dashboard = () => {
               </div>
               {/* Whose Birthday?? */}
               <div className="col-lg-6 col-md-12 mt-5">
-                <div class="card">
-                  <div class="card-header card-header-danger">
-                    <h4 class="card-title">Whose Birthday?</h4>
+                <div className="card">
+                  <div className="card-header card-header-danger">
+                    <h4 className="card-title">Whose Birthday?</h4>
                     {/* <p class="card-category">New employees.</p> */}
                   </div>
-                  <div class="card-body table-responsive">
-                    <table class="table table-hover">
-                      <thead class="text-default">
+                  <div className="card-body table-responsive">
+                    <table className="table table-hover">
+                      <thead className="text-default">
                         <th>#</th>
                         <th>Name</th>
                         <th>Date</th>

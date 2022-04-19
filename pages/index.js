@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -80,12 +81,12 @@ const Home = () => {
                     Forgot Password?
                   </a>
                 </div> */}
-                <a
+                <Link
                   href="/admin/dashboard"
                   className="border-2 border-red-700 text-red-700 rounded-full px-12 py-2 inline-block font-semibold hover:bg-red-700 hover:text-black"
                 >
                   Sign In
-                </a>
+                </Link>
               </div>
             </div>
           </div>
