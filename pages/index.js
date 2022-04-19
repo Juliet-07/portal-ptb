@@ -51,7 +51,6 @@ const Home = () => {
               {/* Social login section */}
               {/* <p className="text-gray-400 my-3">or use your email</p> */}
 
-
               <div className="flex flex-col items-center">
                 <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
                   <FaRegEnvelope className="text-gray-400 m-2" />
@@ -81,11 +80,10 @@ const Home = () => {
                     Forgot Password?
                   </a>
                 </div> */}
-                <Link
-                  href="/admin/dashboard"
-                  className="border-2 border-red-700 text-red-700 rounded-full px-12 py-2 inline-block font-semibold hover:bg-red-700 hover:text-black"
-                >
-                  Sign In
+                <Link href="/admin/dashboard">
+                  <p className="border-2 border-red-700 text-red-700 rounded-full px-12 py-2 inline-block font-semibold hover:bg-red-700 hover:text-black">
+                    Sign In
+                  </p>
                 </Link>
               </div>
             </div>
@@ -97,12 +95,9 @@ const Home = () => {
             <p className="mb-10">
               Fill up personal information and start your journey with us
             </p>
-            <a
-              href="#"
-              className="border-2 border-black rounded-full px-12 py-2 inline-block font-semibold hover:bg-black hover:text-red-700"
-            >
+            <p className="border-2 border-black rounded-full px-12 py-2 inline-block font-semibold hover:bg-black hover:text-red-700">
               Sign Up
-            </a>
+            </p>
           </div>
         </div>
       </main>
