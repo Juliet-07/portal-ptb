@@ -117,9 +117,9 @@ const Dashboard = () => {
         <main className="main-panel">
           {/* Navbar Starts */}
           <nav className="navbar navbar-expaand-lg navbar-transparent navbar-absolute fixed-top">
-            <div className="container-fluid">
+            <div className="container-fluid bg-red-700">
               <div className="navbar-wrapper">
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand text-3xl text-white" href="#">
                   Dashboard
                 </a>
               </div>
@@ -128,55 +128,70 @@ const Dashboard = () => {
           {/* Navbar Ends */}
           <div className="content">
             <div className="container-fluid">
+              {/* Display Links */}
               <div>
-                <h4>Calendar</h4>
-                <div>
-                  <Calendar onChange={onChange} value={value} />
-                </div>
-                {/* <h1>NA HERE WE DEY</h1> */}
-              </div>
-              {/* Whose Birthday?? */}
-              <div className="col-lg-6 col-md-12 mt-5">
+                <h2 className="text-red-700 text-3xl">Favorite Links</h2>
                 <div className="card">
-                  <div className="card-header card-header-danger">
-                    <h4 className="card-title">Whose Birthday?</h4>
-                    {/* <p class="card-category">New employees.</p> */}
-                  </div>
-                  <div className="card-body table-responsive">
-                    <table className="table table-hover">
-                      <thead className="text-default">
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Date</th>
-                        {/* <th>Phone</th> */}
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Damon Salvathore</td>
-                          <td>12/09</td>
-                          {/* <td>0814444444444</td> */}
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Elena Gilbert</td>
-                          <td>13/09</td>
-                          {/* <td>0814444444444</td> */}
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Sage Rodriguez</td>
-                          <td>14/09</td>
-                          {/* <td>0814444444444</td> */}
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Juliet Joseph</td>
-                          <td>02/12</td>
-                          {/* <td>0814444444444</td> */}
-                        </tr>
-                      </tbody>
-                    </table>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <a href="https://meetjuliet.netlify.app">link</a>
+                </div>
+              </div>
+              {/* Display Links */}
+              <div className="flex-row">
+                <h4 className="text-3xl text-red-700">Calendar</h4>
+                {/* <div className="bg-orange-400"> */}
+                  <Calendar onChange={onChange} value={value} />
+                {/* </div> */}
+                {/* Whose Birthday?? */}
+                <div className="col-lg-6 col-md-12 mt-5">
+                  <div className="card">
+                    <div className="card-header card-header-danger">
+                      <h4 className="card-title">Whose Birthday?</h4>
+                      {/* <p class="card-category">New employees.</p> */}
+                    </div>
+                    <div className="card-body table-responsive">
+                      <table className="table table-hover">
+                        <thead className="text-default">
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Date</th>
+                          {/* <th>Phone</th> */}
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Damon Salvathore</td>
+                            <td>12/09</td>
+                            {/* <td>0814444444444</td> */}
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Elena Gilbert</td>
+                            <td>13/09</td>
+                            {/* <td>0814444444444</td> */}
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Sage Rodriguez</td>
+                            <td>14/09</td>
+                            {/* <td>0814444444444</td> */}
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Juliet Joseph</td>
+                            <td>02/12</td>
+                            {/* <td>0814444444444</td> */}
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
