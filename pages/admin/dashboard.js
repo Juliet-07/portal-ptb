@@ -117,7 +117,7 @@ const Dashboard = () => {
         <main className="main-panel">
           {/* Navbar Starts */}
           <nav className="navbar navbar-expaand-lg navbar-transparent navbar-absolute fixed-top">
-            <div className="container-fluid bg-red-700">
+            <div className="container-fluid shadeRed">
               <div className="navbar-wrapper">
                 <a className="navbar-brand text-3xl text-white" href="#">
                   Dashboard
@@ -130,7 +130,7 @@ const Dashboard = () => {
             <div className="container-fluid">
               {/* Display Links */}
               <div>
-                <h2 className="text-red-700 text-3xl">Favorite Links</h2>
+                <h2 className="shadeRed1 text-3xl">Favorite Links</h2>
                 <div className="card">
                   <a href="https://meetjuliet.netlify.app">link</a>
                   <a href="https://meetjuliet.netlify.app">link</a>
@@ -145,7 +145,7 @@ const Dashboard = () => {
               </div>
               {/* Display Links */}
               <div className="flex-row">
-                <h4 className="text-3xl text-red-700">Calendar</h4>
+                <h4 className="text-3xl shadeRed1">Calendar</h4>
                 {/* <div className="bg-orange-400"> */}
                   <Calendar onChange={onChange} value={value} />
                 {/* </div> */}
