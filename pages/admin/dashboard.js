@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { MdDashboard, MdPerson } from "react-icons/md";
+import { MdDashboard, MdPerson, MdSavedSearch } from "react-icons/md";
+import { BsChatDots, BsCart4, BsFillPieChartFill } from "react-icons/bs";
+import { FaJournalWhills, FaPeopleArrows } from "react-icons/fa";
+import { FcOpenedFolder } from "react-icons/fc";
+import { SiFormstack } from "react-icons/si";
+import { GiBookmark } from "react-icons/gi";
+import { GrUserSettings } from "react-icons/gr";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
@@ -35,60 +41,84 @@ const Dashboard = () => {
             <ul className="nav">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  {/* <MdDashboard size={30}/> */}
+                  <i className="material-icons">
+                    <MdDashboard />
+                  </i>
                   <p>Overview</p>
                 </a>
               </li>
+              <Link href="https://premiumtrustbank.com/">
+                <li className="nav-item">
+                  <a href="#" className="nav-link">
+                    <i className="material-icons">
+                      <MdSavedSearch />
+                    </i>
+                    <p>About Us</p>
+                  </a>
+                </li>
+              </Link>
+
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  <p>About Us</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="./user.html">
-                  {/* <MdPerson/> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <BsChatDots />
+                  </i>
                   <p>Enquiries</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./table/tables.html">
-                  {/* <i className="material-icons">content_paste</i> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <FaJournalWhills />
+                  </i>
                   <p>Directories</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./user.html">
-                  {/* <MdPerson/> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <BsCart4 />
+                  </i>
                   <p>Requisitions</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./makeadmin.html">
-                  {/* <i className="material-icons">account_circle</i> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <FcOpenedFolder />
+                  </i>
                   <p>Data Processing</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <SiFormstack />
+                  </i>
                   <p>Forms & Register</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <GiBookmark />
+                  </i>
                   <p>Policies & Procedure</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <BsFillPieChartFill />
+                  </i>
                   <p>Performance Evaluation</p>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                  <i className="material-icons">
+                    <FaPeopleArrows />
+                  </i>
                   <p>Employee Connect</p>
                 </a>
               </li>
@@ -100,13 +130,17 @@ const Dashboard = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                  <i className="material-icons">
+                    <GrUserSettings />
+                  </i>
                   <p>Transaction Processing</p>
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                  <i className="material-icons">
+                    <MdPerson />
+                  </i>
                   <p>Profile</p>
                 </a>
               </li>
@@ -128,70 +162,164 @@ const Dashboard = () => {
           {/* Navbar Ends */}
           <div className="content">
             <div className="container-fluid">
+              {/* Calendar */}
+              <div
+                // style={{
+                //   display: "flex",
+                //   flexDirection: "column",
+                //   alignItems: "center",
+                //   justifyContent: "center",
+                // }}
+                className="mb-5"
+              >
+                <h4 className="text-3xl shadeRed1">Calendar</h4>
+                <Calendar onChange={onChange} value={value} />
+              </div>
+              {/* Calendar */}
               {/* Display Links */}
-              <div>
-                <h2 className="shadeRed1 text-3xl">Favorite Links</h2>
+              <div className="col-lg-6 col-md-12 mt-5">
                 <div className="card">
-                  <a href="https://meetjuliet.netlify.app">link</a>
-                  <a href="https://meetjuliet.netlify.app">link</a>
-                  <a href="https://meetjuliet.netlify.app">link</a>
-                  <a href="https://meetjuliet.netlify.app">link</a>
-                  <a href="https://meetjuliet.netlify.app">link</a>
-                  <a href="https://meetjuliet.netlify.app">link</a>
-                  <a href="https://meetjuliet.netlify.app">link</a>
-                  <a href="https://meetjuliet.netlify.app">link</a>
-                  <a href="https://meetjuliet.netlify.app">link</a>
+                  <div className="card-header card-header-danger">
+                    <h4 className="card-title">Favorite Links</h4>
+                  </div>
+                  <div className="card-body table-responsive">
+                    <table className="table table-hover">
+                      {/* <thead className="text-default">
+                        <th>Links</th>
+                      </thead> */}
+                      <tbody>
+                        <tr>
+                          <td>
+                            <a href="https://meetjuliet.netlify.app">
+                              Portfolio
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://premiumtrustbank.com/">
+                              Company Website
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://meetjuliet.netlify.app">
+                              Portfolio
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://premiumtrustbank.com/">
+                              Company Website
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://meetjuliet.netlify.app">
+                              Portfolio
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://premiumtrustbank.com/">
+                              Company Website
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://meetjuliet.netlify.app">
+                              Portfolio
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://premiumtrustbank.com/">
+                              Company Website
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://meetjuliet.netlify.app">
+                              Portfolio
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://premiumtrustbank.com/">
+                              Company Website
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://meetjuliet.netlify.app">
+                              Portfolio
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="https://premiumtrustbank.com/">
+                              Company Website
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
               {/* Display Links */}
-              <div className="flex-row">
-                <h4 className="text-3xl shadeRed1">Calendar</h4>
-                {/* <div className="bg-orange-400"> */}
-                  <Calendar onChange={onChange} value={value} />
-                {/* </div> */}
-                {/* Whose Birthday?? */}
-                <div className="col-lg-6 col-md-12 mt-5">
-                  <div className="card">
-                    <div className="card-header card-header-danger">
-                      <h4 className="card-title">Whose Birthday?</h4>
-                      {/* <p class="card-category">New employees.</p> */}
-                    </div>
-                    <div className="card-body table-responsive">
-                      <table className="table table-hover">
-                        <thead className="text-default">
-                          <th>#</th>
-                          <th>Name</th>
-                          <th>Date</th>
-                          {/* <th>Phone</th> */}
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Damon Salvathore</td>
-                            <td>12/09</td>
-                            {/* <td>0814444444444</td> */}
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Elena Gilbert</td>
-                            <td>13/09</td>
-                            {/* <td>0814444444444</td> */}
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Sage Rodriguez</td>
-                            <td>14/09</td>
-                            {/* <td>0814444444444</td> */}
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>Juliet Joseph</td>
-                            <td>02/12</td>
-                            {/* <td>0814444444444</td> */}
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+              {/* Whose Birthday?? */}
+              <div className="col-lg-6 col-md-12 mt-5">
+                <div className="card">
+                  <div className="card-header card-header-danger">
+                    <h4 className="card-title">Whose Birthday?</h4>
+                    {/* <p class="card-category">New employees.</p> */}
+                  </div>
+                  <div className="card-body table-responsive">
+                    <table className="table table-hover">
+                      {/* <thead className="text-default">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Phone</th>
+                      </thead> */}
+                      <tbody>
+                        <tr>
+                          {/* <td>1</td> */}
+                          <td>Damon Salvathore</td>
+                          {/* <td>12/09</td> */}
+                          {/* <td>0814444444444</td> */}
+                        </tr>
+                        <tr>
+                          {/* <td>2</td> */}
+                          <td>Elena Gilbert</td>
+                          {/* <td>13/09</td> */}
+                          {/* <td>0814444444444</td> */}
+                        </tr>
+                        <tr>
+                          {/* <td>3</td> */}
+                          <td>Sage Rodriguez</td>
+                          {/* <td>14/09</td> */}
+                          {/* <td>0814444444444</td> */}
+                        </tr>
+                        <tr>
+                          {/* <td>4</td> */}
+                          <td>Juliet Joseph</td>
+                          {/* <td>02/12</td> */}
+                          {/* <td>0814444444444</td> */}
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
