@@ -218,8 +218,8 @@ img {
 
 /*end reset*/
 
-body {
-  background: url(../assets/money.jpg) no-repeat;
+/* body {
+  background: url(../assets/premium.jpeg) no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -228,8 +228,22 @@ body {
   background-position: center;
   font-size: 100%;
   font-family: "Lato", sans-serif;
+} */
+.ptbPortalHome {
+  background: url(../assets/premium.png) no-repeat;
+  background-size: contain;
+  background-color: rgb(57, 55, 56);
+  /* height: 100%; */
+  /* -webkit-background-size: cover; */
+  /* -moz-background-size: cover; */
+  /* -o-background-size: cover; */
+  /* -ms-background-size: cover; */
+  background-position: center;
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  /* scrollbar-width: none; */
+  overflow: hidden;
 }
-
 /*-- title --*/
 
 h1 {

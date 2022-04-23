@@ -11,7 +11,7 @@ import { MdLockOutline } from "react-icons/md";
 
 const Home = () => {
   return (
-    <div>
+    <div className="ptbPortalHome">
       <Head>
         <title>PremiumTrust Bank</title>
         <link rel="icon" href="/favicon.ico" />
