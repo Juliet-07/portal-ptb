@@ -69,14 +69,16 @@ const Dashboard = () => {
                   <p>Enquiries</p>
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <FaJournalWhills />
-                  </i>
-                  <p>Directories</p>
-                </a>
-              </li>
+              <Link href="/admin/directories">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <FaJournalWhills />
+                    </i>
+                    <p>Directories</p>
+                  </a>
+                </li>
+              </Link>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
