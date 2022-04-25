@@ -8,6 +8,7 @@ import { FcOpenedFolder } from "react-icons/fc";
 import { SiFormstack } from "react-icons/si";
 import { GiBookmark } from "react-icons/gi";
 import { GrUserSettings } from "react-icons/gr";
+import { BiLogOut } from "react-icons/bi";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
@@ -16,6 +17,8 @@ const Dashboard = () => {
   return (
     <>
       <Head>
+        <title>PremiumTrust Bank</title>
+        <link rel="icon" href="/logo.png" />
         <link
           rel="stylesheet"
           type="text/css"
@@ -29,7 +32,7 @@ const Dashboard = () => {
       <div className="container-fluid">
         <div
           className="sidebar"
-          data-color="orange"
+          data-color="danger"
           data-background-color="white"
         >
           <div className="logo">
@@ -136,14 +139,26 @@ const Dashboard = () => {
                   <p>Transaction Processing</p>
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="./report.html">
-                  <i className="material-icons">
-                    <MdPerson />
-                  </i>
-                  <p>Profile</p>
-                </a>
-              </li>
+              <Link href="/admin/profile">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <MdPerson />
+                    </i>
+                    <p>Profile</p>
+                  </a>
+                </li>
+              </Link>
+              <Link href="/">
+                <li className="nav-item shadeCyan">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BiLogOut />
+                    </i>
+                    <p className="text-white">Logout</p>
+                  </a>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

@@ -14,7 +14,7 @@ const Home = () => {
     <div className="ptbPortalHome">
       <Head>
         <title>PremiumTrust Bank</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <h1>
         <span>P</span>remium
