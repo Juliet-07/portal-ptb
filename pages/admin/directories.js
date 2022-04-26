@@ -118,7 +118,7 @@ const Directories = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
+                <a className="nav-link" href="#">
                   <i className="material-icons">
                     <FaPeopleArrows />
                   </i>
@@ -126,13 +126,13 @@ const Directories = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">report</i>
                   <p>Customer Service</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
+                <a className="nav-link" href="#">
                   <i className="material-icons">
                     <GrUserSettings />
                   </i>
@@ -189,9 +189,10 @@ const Directories = () => {
           </nav>
           {/* Navbar Ends */}
           <div className="content">
-            <div className="container-fluid"></div>
+            <div className="container-fluid">{/* <h1>Details</h1> */}</div>
           </div>
         </div>
+        {/* <p>(head office)105150007, (head office branch{Adeola Hopewell})105150013, (transamadi{PortHarcourt}) 105210025</p>   */}
       </div>
     </>
   );

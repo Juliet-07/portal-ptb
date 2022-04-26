@@ -120,7 +120,7 @@ const Profile = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
+                <a className="nav-link" href="#">
                   <i className="material-icons">
                     <FaPeopleArrows />
                   </i>
@@ -128,13 +128,13 @@ const Profile = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                <a className="nav-link" href="#">
+                  <i className="material-icons">report</i>
                   <p>Customer Service</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
+                <a className="nav-link" href="#">
                   <i className="material-icons">
                     <GrUserSettings />
                   </i>
