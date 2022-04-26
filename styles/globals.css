@@ -17,3 +17,7 @@ a {
 * {
   box-sizing: border-box;
 }
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(57, 55, 56);
+}

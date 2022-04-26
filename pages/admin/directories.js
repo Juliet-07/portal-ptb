@@ -165,81 +165,31 @@ const Directories = () => {
         {/* Sidebar */}
         <div className="main-panel">
           {/* Navbar Starts */}
-          <nav className="navbar navbar-expaand-lg navbar-transparent navbar-absolute fixed-top">
-            <div className="container-fluid shadeRed">
-              <div className="navbar-wrapper">
-                <a className="navbar-brand text-3xl text-white" href="#">
-                  Directories
-                </a>
-              </div>
+          <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top">
+            <div className="container-fluid ">
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Who is Who?
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Whose Birthday?
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Bank Directory
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                ATM Locations
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Branch Sort Codes
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Directors Portal
+              </a>
             </div>
           </nav>
           {/* Navbar Ends */}
-          <div className="row">
-            <div className="container">
-              <ul id="slide-out" className="side-nav">
-                <li>
-                    <div className="user-view">
-                        <div className="background">
-                            <h1>picture here</h1>
-                        </div>
-
-                    </div>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">code</i>HTML5
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">flare</i>CSS3
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">desktop_mac</i>Bootstrap 3
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">laptop_mac</i>Bootstrap 4
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">dvr</i>Materialize CSS
-                  </a>
-                </li>
-                <li>
-                  <div class="divider"></div>
-                </li>
-                <li>
-                  <a class="subheader">Scripts</a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">input</i>JavaScript
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">show_chart</i>jQuery
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">local_grocery_store</i>Ajax
-                  </a>
-                </li>
-                <li>
-                  <a class="waves-effect" href="#!">
-                    <i class="material-icons">local_library</i>AngularJS
-                  </a>
-                </li>
-              </ul>
-              <a href="#" data-activates="slide-out" className="btn button-collapse blue hoverable">SIDE NAV</a>
-            </div>
+          <div className="content">
+            <div className="container-fluid"></div>
           </div>
         </div>
       </div>
