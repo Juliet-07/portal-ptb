@@ -18589,7 +18589,8 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 .card.bg-danger,
 .card.card-rotate.bg-danger .front,
 .card.card-rotate.bg-danger .back {
-  background: linear-gradient(60deg, #ef5350, #e53935);
+  /* background: linear-gradient(60deg, #ef5350, #e53935); */
+  background: rgb(205, 53, 57);
 }
 
 .card .card-header-rose .card-icon,

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
+import Woman from "../../assets/woman.jpg";
 import { MdDashboard, MdPerson, MdSavedSearch } from "react-icons/md";
 import { BsChatDots, BsCart4, BsFillPieChartFill } from "react-icons/bs";
 import { FaJournalWhills, FaPeopleArrows } from "react-icons/fa";
@@ -14,6 +16,16 @@ import "react-calendar/dist/Calendar.css";
 
 const Dashboard = () => {
   const [value, onChange] = useState(new Date());
+  const [hour, setHour] = useState(null);
+  const [user, setUser] = useState("Juliet");
+  useEffect(() => {
+    timeGreeting();
+  });
+  const timeGreeting = () => {
+    let date = new Date();
+    let hour = date.getHours();
+    setHour(hour);
+  };
   return (
     <>
       <Head>
@@ -178,19 +190,45 @@ const Dashboard = () => {
           </nav>
           {/* Navbar Ends */}
           <div className="content">
-            <div className="container-fluid">
+            <div className="container-fluid row">
+              {/* Profile Div */}
               {/* Calendar */}
               <div
-                // style={{
-                //   display: "flex",
-                //   flexDirection: "column",
-                //   alignItems: "center",
-                //   justifyContent: "center",
-                // }}
-                className="mb-5"
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
               >
-                <h4 className="text-3xl shadeRed1">Calendar</h4>
-                <Calendar onChange={onChange} value={value} />
+                <div>
+                  <p className="text-2xl shadeRed1">
+                    {hour < 12
+                      ? "Good Morning "
+                      : hour < 17
+                      ? "Good Afternoon "
+                      : "Good evening "}
+                    {user}
+                  </p>
+                  <Image
+                    src={Woman}
+                    width={500}
+                    height={500}
+                    layout="responsive"
+                    objectFit="contain"
+                    alt="Picture of the author"
+                    className="mt-3"
+                  />
+                  <div className="mt-3">
+                    <p>Role:Software Engineer</p>
+                    <p>Department:I.T</p>
+                    <p>Branch:Head Office</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-3xl shadeRed1">Calendar</h4>
+                  <Calendar onChange={onChange} value={value} />
+                </div>
               </div>
               {/* Calendar */}
               {/* Display Links */}
