@@ -204,10 +204,10 @@ const Dashboard = () => {
                 <div>
                   <p className="text-2xl shadeRed1">
                     {hour < 12
-                      ? "Good Morning "
+                      ? "Good Morning, "
                       : hour < 17
-                      ? "Good Afternoon "
-                      : "Good evening "}
+                      ? "Good Afternoon, "
+                      : "Good evening, "}
                     {user}
                   </p>
                   <Image
