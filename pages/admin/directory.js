@@ -183,10 +183,10 @@ const Directories = () => {
                     Table list of all registered employees
                   </h4>
                 </div>
-                <div class="card-body table-responsive">
+                <div className="card-body table-responsive">
                   {/* <!-- <h1>Table here</h1> --> */}
-                  <table class="table table-hover">
-                    <thead class="text-default">
+                  <table className="table table-hover">
+                    <thead className="text-default">
                       <th>#</th>
                       <th>Branch</th>
                       <th>Sort Codes</th>
