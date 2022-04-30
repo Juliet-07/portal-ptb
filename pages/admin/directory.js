@@ -165,11 +165,11 @@ const Directories = () => {
         {/* Sidebar */}
         <div className="main-panel">
           {/* Navbar Starts */}
-          <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top">
-            <div className="container-fluid ">
+          <nav className="navbar navbar-expaand-lg navbar-transparent navbar-absolute fixed-top">
+            <div className="container-fluid shadeRed">
               <div className="navbar-wrapper">
-                <a className="navbar-brand" href="#">
-                  DIRECTORY
+                <a className="navbar-brand text-3xl text-white" href="#">
+                  Directory
                 </a>
               </div>
             </div>
