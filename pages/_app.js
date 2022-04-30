@@ -7,8 +7,8 @@ import "../styles/style.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    import("materialize-css/dist/js/materialize");
     import("bootstrap/dist/js/bootstrap");
+    import("materialize-css/dist/js/materialize");
   });
   return <Component {...pageProps} />;
 }

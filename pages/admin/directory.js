@@ -167,25 +167,58 @@ const Directories = () => {
           {/* Navbar Starts */}
           <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top">
             <div className="container-fluid ">
-              <a href="#" className="navbar-brand text-3xl text-danger">
-                Who is Who?
-              </a>
-              <a href="#" className="navbar-brand text-3xl text-danger">
-                Whose Birthday?
-              </a>
-              <Link href="/admin/directory">
-                <a href="#" className="navbar-brand text-3xl text-danger">
-                  Bank Directory
+              <div className="navbar-wrapper">
+                <a className="navbar-brand" href="#">
+                  DIRECTORY
                 </a>
-              </Link>
-              <a href="#" className="navbar-brand text-3xl text-danger">
-                Directors Portal
-              </a>
+              </div>
             </div>
           </nav>
           {/* Navbar Ends */}
           <div className="content">
-            <div className="container-fluid">{/* <h1>Details</h1> */}</div>
+            <div className="container-fluid">
+              <div className="card">
+                <div className="card-header card-header-danger">
+                  <h4 className="card-title">
+                    Table list of all registered employees
+                  </h4>
+                </div>
+                <div class="card-body table-responsive">
+                  {/* <!-- <h1>Table here</h1> --> */}
+                  <table class="table table-hover">
+                    <thead class="text-default">
+                      <th>#</th>
+                      <th>Branch</th>
+                      <th>Sort Codes</th>
+                      <th>ATM Locations</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td> Head Office</td>
+                        <td>105150007</td>
+                        <td>None</td>
+                      </tr>
+                      {/* <!-- Next --> */}
+                      <tr>
+                        <td>2</td>
+                        <td>Head Office Branch (Adeola Hopewell V.I)</td>
+                        <td>105150013</td>
+                        <td>Head Office Branch</td>
+                      </tr>
+                      {/* <!-- Next --> */}
+                      <tr>
+                        <td>3</td>
+                        <td>Transamadi Port-Harcourt</td>
+                        <td>105210025</td>
+                        <td>Transamadi Port-Harcourt</td>
+                      </tr>
+                      {/* <!-- Next --> */}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

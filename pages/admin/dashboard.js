@@ -245,8 +245,8 @@ const Dashboard = () => {
                       <tbody>
                         <tr>
                           <td>
-                            <a href="https://meetjuliet.netlify.app">
-                              Portfolio
+                            <a href="https://premiumtrustbank.com/">
+                              PremiumTrust Bank
                             </a>
                           </td>
                         </tr>
