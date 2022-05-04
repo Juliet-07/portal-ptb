@@ -48,9 +48,14 @@ const Dashboard = () => {
           data-background-color="white"
         >
           <div className="logo">
-            <a href="#" className="simple-text logo-normal">
-              PremiumTrust Bank
-            </a>
+            <Image
+              src={Woman}
+              width={100}
+              height={100}
+              // layout="responsive"
+              // objectFit="contain"
+              style={{ borderRadius: 50 }}
+            />
           </div>
           <div className="sidebar-wrapper">
             <ul className="nav">
@@ -91,14 +96,16 @@ const Dashboard = () => {
                   </a>
                 </li>
               </Link>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <BsCart4 />
-                  </i>
-                  <p>Requisitions</p>
-                </a>
-              </li>
+              <Link href="/admin/requisition">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsCart4 />
+                    </i>
+                    <p>Requisitions</p>
+                  </a>
+                </li>
+              </Link>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
@@ -141,7 +148,7 @@ const Dashboard = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="./report.html">
-                  {/* <i className="material-icons">report</i> */}
+                  <i className="material-icons">report</i>
                   <p>Customer Service</p>
                 </a>
               </li>
@@ -183,7 +190,12 @@ const Dashboard = () => {
             <div className="container-fluid shadeRed">
               <div className="navbar-wrapper">
                 <a className="navbar-brand text-3xl text-white" href="#">
-                  Dashboard
+                  {hour < 12
+                    ? "Good Morning, "
+                    : hour < 17
+                    ? "Good Afternoon, "
+                    : "Good evening, "}
+                  {user}
                 </a>
               </div>
             </div>

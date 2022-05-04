@@ -10,7 +10,7 @@ import { GiBookmark } from "react-icons/gi";
 import { GrUserSettings } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
 
-const Directories = () => {
+const Requisition = () => {
   return (
     <>
       <Head>
@@ -69,24 +69,24 @@ const Directories = () => {
                   <p>Enquiries</p>
                 </a>
               </li>
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <FaJournalWhills />
-                  </i>
-                  <p>Directories</p>
-                </a>
-              </li>
-              <Link href="/admin/requisition">
+              <Link href="/admin/directories">
                 <li className="nav-item">
                   <a className="nav-link" href="#">
                     <i className="material-icons">
-                      <BsCart4 />
+                      <FaJournalWhills />
                     </i>
-                    <p>Requisitions</p>
+                    <p>Directories</p>
                   </a>
                 </li>
               </Link>
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <BsCart4 />
+                  </i>
+                  <p>Requisitions</p>
+                </a>
+              </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
@@ -167,31 +167,45 @@ const Directories = () => {
         {/* Sidebar */}
         <div className="main-panel">
           {/* Navbar Starts */}
-          <nav className="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top">
-            <div className="container-fluid ">
-              <a href="#" className="navbar-brand text-3xl text-danger">
-                Who is Who?
-              </a>
-              <a href="#" className="navbar-brand text-3xl text-danger">
-                Whose Birthday?
-              </a>
-              <Link href="/admin/directory">
-                <a href="#" className="navbar-brand text-3xl text-danger">
-                  Bank Directory
+          <nav className="navbar navbar-expaand-lg navbar-transparent navbar-absolute fixed-top">
+            <div className="container-fluid shadeRed">
+              <div className="navbar-wrapper">
+                <a className="navbar-brand text-3xl text-white" href="#">
+                  Requisitions
                 </a>
-              </Link>
-              <a href="#" className="navbar-brand text-3xl text-danger">
-                Directors Portal
-              </a>
+              </div>
             </div>
           </nav>
           {/* Navbar Ends */}
           <div className="content">
-            <div className="container-fluid">{/* <h1>Details</h1> */}</div>
+            <div className="container-fluid">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:;">
+                    Active
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;">
+                    Link
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:;">
+                    Link
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="javascript:;">
+                    Disabled
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
 };
-export default Directories;
+export default Requisition;

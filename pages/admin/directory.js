@@ -77,14 +77,16 @@ const Directories = () => {
                   <p>Directories</p>
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <BsCart4 />
-                  </i>
-                  <p>Requisitions</p>
-                </a>
-              </li>
+              <Link href="/admin/requisition">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsCart4 />
+                    </i>
+                    <p>Requisitions</p>
+                  </a>
+                </li>
+              </Link>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
@@ -179,9 +181,7 @@ const Directories = () => {
             <div className="container-fluid">
               <div className="card">
                 <div className="card-header card-header-danger">
-                  <h4 className="card-title">
-                    Table list of all registered employees
-                  </h4>
+                  <h4 className="card-title">Directories</h4>
                 </div>
                 <div className="card-body table-responsive">
                   {/* <!-- <h1>Table here</h1> --> */}
