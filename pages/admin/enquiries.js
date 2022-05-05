@@ -60,16 +60,14 @@ const Requisition = () => {
                   </a>
                 </li>
               </Link>
-              <Link href="/admin/enquiries">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <i className="material-icons">
-                      <BsChatDots />
-                    </i>
-                    <p>Enquiries</p>
-                  </a>
-                </li>
-              </Link>
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  <i className="material-icons">
+                    <BsChatDots />
+                  </i>
+                  <p>Enquiries</p>
+                </a>
+              </li>
               <Link href="/admin/directories">
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -80,14 +78,16 @@ const Requisition = () => {
                   </a>
                 </li>
               </Link>
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <BsCart4 />
-                  </i>
-                  <p>Requisitions</p>
-                </a>
-              </li>
+              <Link href="/admin/requisition">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsCart4 />
+                    </i>
+                    <p>Requisitions</p>
+                  </a>
+                </li>
+              </Link>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
@@ -167,105 +167,32 @@ const Requisition = () => {
         </div>
         {/* Sidebar */}
         <div className="main-panel">
-          <div className="content mt-0">
-            <div className="container-fluid">
-              <div className="col-lg-6 col-md-12">
-                <div className="card">
-                  <div className="card-header card-header-danger">
-                    <h4 className="card-title">Requisitions</h4>
-                  </div>
-                  <div className="card-body">
-                    <ul className="nav flex-column">
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Address Verification
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link active" href="#">
-                          Admin e-store
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Application Request Portal
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Assest Valuation Request
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Business Name Registration
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Call-card Request
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Cheque Book Request
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Credit Document Deferral
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Document Deferral
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Instant Pin
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          POS/mCash/Master Pass Request
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Retail Loan Request
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Stamp Request
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Statement Printing Request
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Ticket Request
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          User Access Portal
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="#">
-                          Video Conference Schedule
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          {/* Navbar Starts */}
+          <nav className="navbar navbar-transparent navbar-absolute fixed-top">
+            <div className="container-fluid ">
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Account Enquiry
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Deposit Rates
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Auto Lease Applications
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Guide to CBN Charges
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                Premuim Salary Advance FAQs
+              </a>
+              <a href="#" className="navbar-brand text-3xl text-danger">
+                FAQs on Agency Banking
+              </a>
             </div>
+          </nav>
+          {/* Navbar Ends */}
+          <div className="content">
+            <div className="container-fluid"></div>
           </div>
         </div>
       </div>

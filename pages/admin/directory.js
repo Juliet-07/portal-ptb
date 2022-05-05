@@ -60,15 +60,16 @@ const Directories = () => {
                   </a>
                 </li>
               </Link>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <BsChatDots />
-                  </i>
-                  <p>Enquiries</p>
-                </a>
-              </li>
+              <Link href="/admin/enquiries">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsChatDots />
+                    </i>
+                    <p>Enquiries</p>
+                  </a>
+                </li>
+              </Link>
               <li className="nav-item active">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
@@ -167,7 +168,7 @@ const Directories = () => {
         {/* Sidebar */}
         <div className="main-panel">
           {/* Navbar Starts */}
-          <nav className="navbar navbar-expaand-lg navbar-transparent navbar-absolute fixed-top">
+          {/* <nav className="navbar navbar-expaand-lg navbar-transparent navbar-absolute fixed-top">
             <div className="container-fluid shadeRed">
               <div className="navbar-wrapper">
                 <a className="navbar-brand text-3xl text-white" href="#">
@@ -175,9 +176,9 @@ const Directories = () => {
                 </a>
               </div>
             </div>
-          </nav>
+          </nav> */}
           {/* Navbar Ends */}
-          <div className="content">
+          <div className="content mt-0">
             <div className="container-fluid">
               <div className="card">
                 <div className="card-header card-header-danger">

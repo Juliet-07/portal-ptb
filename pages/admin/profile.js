@@ -60,15 +60,16 @@ const Profile = () => {
                   </a>
                 </li>
               </Link>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <BsChatDots />
-                  </i>
-                  <p>Enquiries</p>
-                </a>
-              </li>
+              <Link href="/admin/enquiries">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsChatDots />
+                    </i>
+                    <p>Enquiries</p>
+                  </a>
+                </li>
+              </Link>
               <Link href="/admin/directories">
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -79,14 +80,16 @@ const Profile = () => {
                   </a>
                 </li>
               </Link>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <BsCart4 />
-                  </i>
-                  <p>Requisitions</p>
-                </a>
-              </li>
+              <Link href="/admin/requisition">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsCart4 />
+                    </i>
+                    <p>Requisitions</p>
+                  </a>
+                </li>
+              </Link>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">

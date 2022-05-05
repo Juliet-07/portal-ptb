@@ -48,14 +48,9 @@ const Dashboard = () => {
           data-background-color="white"
         >
           <div className="logo">
-            <Image
-              src={Woman}
-              width={100}
-              height={100}
-              // layout="responsive"
-              // objectFit="contain"
-              style={{ borderRadius: 50 }}
-            />
+            <a href="#" className="simple-text logo-normal">
+              PremiumTrust Bank
+            </a>
           </div>
           <div className="sidebar-wrapper">
             <ul className="nav">
@@ -77,15 +72,16 @@ const Dashboard = () => {
                   </a>
                 </li>
               </Link>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <BsChatDots />
-                  </i>
-                  <p>Enquiries</p>
-                </a>
-              </li>
+              <Link href="/admin/enquiries">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsChatDots />
+                    </i>
+                    <p>Enquiries</p>
+                  </a>
+                </li>
+              </Link>
               <Link href="/admin/directories">
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -190,12 +186,7 @@ const Dashboard = () => {
             <div className="container-fluid shadeRed">
               <div className="navbar-wrapper">
                 <a className="navbar-brand text-3xl text-white" href="#">
-                  {hour < 12
-                    ? "Good Morning, "
-                    : hour < 17
-                    ? "Good Afternoon, "
-                    : "Good evening, "}
-                  {user}
+                  Dashboard
                 </a>
               </div>
             </div>
@@ -224,17 +215,21 @@ const Dashboard = () => {
                   </p>
                   <Image
                     src={Woman}
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                     layout="responsive"
-                    objectFit="contain"
+                    // objectFit="contain"
                     alt="Picture of the author"
                     className="mt-3"
+                    style={{ borderRadius: 150 }}
                   />
                   <div className="mt-3">
                     <p>Role:Software Engineer</p>
+                    <br />
                     <p>Department:I.T</p>
+                    <br />
                     <p>Branch:Head Office</p>
+                    <br />
                   </div>
                 </div>
                 <div>

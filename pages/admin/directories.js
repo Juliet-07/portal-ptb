@@ -60,15 +60,16 @@ const Directories = () => {
                   </a>
                 </li>
               </Link>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <BsChatDots />
-                  </i>
-                  <p>Enquiries</p>
-                </a>
-              </li>
+              <Link href="/admin/enquiries">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsChatDots />
+                    </i>
+                    <p>Enquiries</p>
+                  </a>
+                </li>
+              </Link>
               <li className="nav-item active">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
