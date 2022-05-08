@@ -1,12 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaGoogle,
-  FaRegEnvelope,
-  FaSignInAlt,
-} from "react-icons/fa";
+import { FaRegEnvelope, FaSignInAlt } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
 
 const Home = () => {
