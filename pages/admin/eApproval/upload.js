@@ -218,53 +218,34 @@ const Dashboard = () => {
               {/* Approval Table */}
               <div className="card">
                 <div className="card-body ">
-                  <div className="table-responsive">
-                    <table className="table table-hover">
-                      <thead className="text-danger">
-                        <th>Document</th>
-                        <th>Approvers</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <Select
-                              name="approvers"
-                              options={fileTypes}
-                              isMulti
-                            />
-                          </td>
-                          <td>
-                            <Select
-                              name="approvers"
-                              options={options}
-                              isMulti
-                            />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <Select
-                              name="approvers"
-                              options={fileTypes}
-                              isMulti
-                            />
-                          </td>
-                          <td>
-                            <Select
-                              name="approvers"
-                              options={options}
-                              isMulti
-                            />
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <table className="table table-hover">
+                    <thead className="text-danger">
+                      <th>Document</th>
+                      <th>Approvers</th>
+                    </thead>
+                    <tbody>
+                      <form></form>
+                      <tr>
+                        <td>
+                          <Select
+                            name="approvers"
+                            options={fileTypes}
+                            isMulti
+                          />
+                        </td>
+                        <td>
+                          <Select name="approvers" options={options} isMulti />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                   {/* upload section */}
                   <div>
-                    <button className="btn btn-primary mt-5" type="submit">
-                      Upload
-                    </button>
+                    <Link href="/admin/eApproval/approve">
+                      <button className="btn btn-primary mt-5" type="submit">
+                        Upload
+                      </button>
+                    </Link>
                     <Link href="/admin/dashboard">
                       <button
                         className="btn btn-danger pull-right mt-5"
