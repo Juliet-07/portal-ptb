@@ -43,7 +43,7 @@ const Request = () => {
                 placeholder="Enter your Message"
               ></textarea>
             </div>
-            <input type="file" class="form-control-file" />
+            <input type="file" className="form-control-file" />
           </form>
           <div>
               {/* Automatically takes the file to next page */}
