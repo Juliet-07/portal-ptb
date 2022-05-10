@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css"
 import "materialize-css/dist/css/materialize.min.css";
 import "../styles/globals.css";
 import "../styles/styles.css";

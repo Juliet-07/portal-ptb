@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { IoMdAttach } from "react-icons/io";
 
 const Request = () => {
   return (
@@ -35,7 +36,15 @@ const Request = () => {
                 aria-describedby="emailHelp"
               />
             </div>
-            <div class="form-group">
+            <div className="form-group">
+              <label for="upload">
+                <i className="material-icons">
+                  <IoMdAttach />
+                </i>
+                <input type="file" id="upload" className="form-control-file" />
+              </label>
+            </div>
+            <div className="form-group">
               <textarea
                 className="form-control"
                 cols="20"
@@ -43,10 +52,10 @@ const Request = () => {
                 placeholder="Enter your Message"
               ></textarea>
             </div>
-            <input type="file" className="form-control-file" />
+            {/* <input type="file" className="form-control-file" /> */}
           </form>
           <div>
-              {/* Automatically takes the file to next page */}
+            {/* Automatically takes the file to next page */}
             <Link href="/admin/eApproval/upload">
               <button className="btn btn-primary mt-5" type="submit">
                 Add Files
