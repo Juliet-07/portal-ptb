@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import { useFormik } from "formik";
+import * as yup from "yup";
 import Head from "next/head";
 import Link from "next/link";
 import { IoMdAttach } from "react-icons/io";
 
 const Request = () => {
+  const [message, setMessage] = useState("");
+  const [submit, setSubmit] = useState(false);
+  const [file, setFile] = useState([]);
+  const formik = useFormik({
+    initialValues: {
+      subject: "",
+      message: "",
+    },
+    onSubmit: () => {
+      setMessage("Form submitted");
+      setSubmit(true);
+    },
+    validationSchema: yup.object({
+      subject: yup.string().trim().required("Subject is required"),
+      message: yup.string().trim().required("Message is required"),
+    }),
+  });
   return (
     <>
       <Head>
@@ -20,43 +39,78 @@ const Request = () => {
         />
       </Head>
       <div className="col-lg-6 col-md-12 mt-20 ml-80 card">
+        <div hidden={!submit} className="alert alert-success" role="alert">
+          {message}
+        </div>
         <div className="card-header card-header-danger">
           <h4 className="card-title">Make Request Here</h4>
         </div>
         <div className="card-body">
-          <form>
-            <div className="form-group">
+          <form onSubmit={formik.handleSubmit}>
+            <div className="form-group mb-3">
               <input
                 type="text"
-                required
-                //   minlength="10"
-                //   maxlength="20"
+                name="subject"
                 className="form-control"
                 placeholder="Subject"
-                aria-describedby="emailHelp"
+                value={formik.values.subject}
+                onChange={formik.handleChange}
               />
-            </div>
-            <div className="form-group">
-              <label for="upload">
-                <i className="material-icons">
-                  <IoMdAttach />
-                </i>
-                <input type="file" id="upload" className="form-control-file" />
-              </label>
+              {formik.errors.subject && (
+                <div className="text-danger">{formik.errors.subject}</div>
+              )}
             </div>
             <div className="form-group">
               <textarea
-                className="form-control"
+                name="message"
+                className="form-control mb-3"
+                placeholder="Enter your Message"
                 cols="20"
                 rows="10"
-                placeholder="Enter your Message"
+                value={formik.values.message}
+                onChange={formik.handleChange}
               ></textarea>
+              {formik.errors.message && (
+                <div className="text-danger">{formik.errors.message}</div>
+              )}
             </div>
-            {/* <input type="file" className="form-control-file" /> */}
+            <div className="mt-5 mb-3">
+              {/* <label htmlFor="file" className="form-label">
+                <IoMdAttach />
+              </label> */}
+              <input
+                type="file"
+                name="file"
+                className="form-control"
+                onChange={setFile}
+              />
+            </div>
+            {/* <div className="image-upload">
+              <label for="file">
+                <img src="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/128/Downloads-icon.png" />
+                <IoMdAttach />
+              </label>
+              <input
+                name="file"
+                type="file"
+                className="form-control"
+                onChange={setFile}
+              />
+            </div> */}
+            {/* <Link href="/admin/eApproval/upload"> */}
+            <button className="btn btn-primary mt-5" type="submit">
+              send
+            </button>
+            {/* </Link> */}
+            <Link href="/admin/dashboard">
+              <button className="btn btn-danger pull-right mt-5" type="submit">
+                Cancel
+              </button>
+            </Link>
           </form>
           <div>
             {/* Automatically takes the file to next page */}
-            <Link href="/admin/eApproval/upload">
+            {/* <Link href="/admin/eApproval/upload">
               <button className="btn btn-primary mt-5" type="submit">
                 Add Files
               </button>
@@ -65,7 +119,7 @@ const Request = () => {
               <button className="btn btn-danger pull-right mt-5" type="submit">
                 Cancel
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

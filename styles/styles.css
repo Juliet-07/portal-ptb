@@ -2315,12 +2315,16 @@ pre code {
 .table-responsive > .table-bordered {
   border: 0;
 }
-
+.image-upload > input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.4375rem 0;
-  font-size: 1rem;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: #495057;
   background-color: rgba(0, 0, 0, 0);

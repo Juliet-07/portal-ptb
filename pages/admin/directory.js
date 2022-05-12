@@ -1,14 +1,21 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { MdDashboard, MdPerson, MdSavedSearch } from "react-icons/md";
-import { BsChatDots, BsCart4, BsFillPieChartFill } from "react-icons/bs";
+import {
+  MdDashboard,
+  MdPerson,
+  MdSavedSearch,
+  MdQuestionAnswer,
+  MdOutlineApproval,
+} from "react-icons/md";
+import { BsCart4, BsFillPieChartFill } from "react-icons/bs";
 import { FaJournalWhills, FaPeopleArrows } from "react-icons/fa";
 import { FcOpenedFolder } from "react-icons/fc";
 import { SiFormstack } from "react-icons/si";
 import { GiBookmark } from "react-icons/gi";
 import { GrUserSettings } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
+import { RiCustomerService2Line } from "react-icons/ri";
 
 const Directories = () => {
   return (
@@ -40,16 +47,14 @@ const Directories = () => {
           </div>
           <div className="sidebar-wrapper">
             <ul className="nav">
-              <Link href="/admin/dashboard">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <i className="material-icons">
-                      <MdDashboard />
-                    </i>
-                    <p>Overview</p>
-                  </a>
-                </li>
-              </Link>
+              <li className="nav-item">
+                <a className="nav-link" href="/admin/dashboard">
+                  <i className="material-icons">
+                    <MdDashboard />
+                  </i>
+                  <p>Overview</p>
+                </a>
+              </li>
               <Link href="https://premiumtrustbank.com/">
                 <li className="nav-item">
                   <a href="#" className="nav-link">
@@ -60,34 +65,14 @@ const Directories = () => {
                   </a>
                 </li>
               </Link>
-              <Link href="/admin/enquiries">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <i className="material-icons">
-                      <BsChatDots />
-                    </i>
-                    <p>Enquiries</p>
-                  </a>
-                </li>
-              </Link>
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="./report.html">
                   <i className="material-icons">
-                    <FaJournalWhills />
+                    <RiCustomerService2Line />
                   </i>
-                  <p>Directories</p>
+                  <p>Customer Service</p>
                 </a>
               </li>
-              <Link href="/admin/requisition">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <i className="material-icons">
-                      <BsCart4 />
-                    </i>
-                    <p>Requisitions</p>
-                  </a>
-                </li>
-              </Link>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
@@ -96,20 +81,50 @@ const Directories = () => {
                   <p>Data Processing</p>
                 </a>
               </li>
+              <Link href="/admin/directories">
+                <li className="nav-item active">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <FaJournalWhills />
+                    </i>
+                    <p>Directories</p>
+                  </a>
+                </li>
+              </Link>
+              <Link href="/admin/eApproval/request">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <MdOutlineApproval />
+                    </i>
+                    <p>E-approval</p>
+                  </a>
+                </li>
+              </Link>
+              <li className="nav-item">
+                <a className="nav-link" href="./report.html">
+                  <i className="material-icons">
+                    <FaPeopleArrows />
+                  </i>
+                  <p>Employee Connect</p>
+                </a>
+              </li>
+              <Link href="/admin/enquiries">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <MdQuestionAnswer />
+                    </i>
+                    <p>Enquiries</p>
+                  </a>
+                </li>
+              </Link>
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
                     <SiFormstack />
                   </i>
                   <p>Forms & Register</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <GiBookmark />
-                  </i>
-                  <p>Policies & Procedure</p>
                 </a>
               </li>
               <li className="nav-item">
@@ -123,23 +138,9 @@ const Directories = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#">
                   <i className="material-icons">
-                    <FaPeopleArrows />
+                    <GiBookmark />
                   </i>
-                  <p>Employee Connect</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">report</i>
-                  <p>Customer Service</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <GrUserSettings />
-                  </i>
-                  <p>Transaction Processing</p>
+                  <p>Policies & Procedure</p>
                 </a>
               </li>
               <Link href="/admin/profile">
@@ -152,6 +153,24 @@ const Directories = () => {
                   </a>
                 </li>
               </Link>
+              <Link href="/admin/requisition">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <BsCart4 />
+                    </i>
+                    <p>Requisitions</p>
+                  </a>
+                </li>
+              </Link>
+              <li className="nav-item">
+                <a className="nav-link" href="./report.html">
+                  <i className="material-icons">
+                    <GrUserSettings />
+                  </i>
+                  <p>Transaction Processing</p>
+                </a>
+              </li>
               <Link href="/">
                 <li className="nav-item shadeCyan">
                   <a className="nav-link" href="#">
