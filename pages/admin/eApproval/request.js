@@ -83,25 +83,14 @@ const Request = () => {
                 name="file"
                 className="form-control"
                 onChange={setFile}
+                multiple
               />
             </div>
-            {/* <div className="image-upload">
-              <label for="file">
-                <img src="https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/128/Downloads-icon.png" />
-                <IoMdAttach />
-              </label>
-              <input
-                name="file"
-                type="file"
-                className="form-control"
-                onChange={setFile}
-              />
-            </div> */}
-            {/* <Link href="/admin/eApproval/upload"> */}
+            <Link href="/admin/eApproval/upload">
             <button className="btn btn-primary mt-5" type="submit">
               send
             </button>
-            {/* </Link> */}
+            </Link>
             <Link href="/admin/dashboard">
               <button className="btn btn-danger pull-right mt-5" type="submit">
                 Cancel

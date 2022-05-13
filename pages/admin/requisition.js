@@ -47,14 +47,16 @@ const Requisition = () => {
           </div>
           <div className="sidebar-wrapper">
             <ul className="nav">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <i className="material-icons">
-                    <MdDashboard />
-                  </i>
-                  <p>Overview</p>
-                </a>
-              </li>
+              <Link href="/admin/dashboard">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <MdDashboard />
+                    </i>
+                    <p>Overview</p>
+                  </a>
+                </li>
+              </Link>
               <Link href="https://premiumtrustbank.com/">
                 <li className="nav-item">
                   <a href="#" className="nav-link">

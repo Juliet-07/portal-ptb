@@ -80,7 +80,7 @@ const Dashboard = () => {
                 </li>
               </Link>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
+                <a className="nav-link" href="#">
                   <i className="material-icons">
                     <RiCustomerService2Line />
                   </i>
@@ -105,7 +105,7 @@ const Dashboard = () => {
                   </a>
                 </li>
               </Link>
-              <Link href="/admin/eApproval/request1">
+              <Link href="/admin/eApproval/request">
                 <li className="nav-item">
                   <a className="nav-link" href="#">
                     <i className="material-icons">
@@ -116,7 +116,7 @@ const Dashboard = () => {
                 </li>
               </Link>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
+                <a className="nav-link" href="#">
                   <i className="material-icons">
                     <FaPeopleArrows />
                   </i>
@@ -178,7 +178,7 @@ const Dashboard = () => {
                 </li>
               </Link>
               <li className="nav-item">
-                <a className="nav-link" href="./report.html">
+                <a className="nav-link" href="#">
                   <i className="material-icons">
                     <GrUserSettings />
                   </i>
