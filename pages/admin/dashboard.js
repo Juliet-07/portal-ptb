@@ -271,85 +271,15 @@ const Dashboard = () => {
                       <tbody>
                         <tr>
                           <td>
-                            <a href="https://premiumtrustbank.com/">
-                              PremiumTrust Bank
+                            <a href="https://premiumfcubs.premiumtrustbank.com/FCJNeoWeb">
+                              Flexcube
                             </a>
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="https://premiumtrustbank.com/">
-                              Company Website
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://meetjuliet.netlify.app">
-                              Portfolio
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://premiumtrustbank.com/">
-                              Company Website
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://meetjuliet.netlify.app">
-                              Portfolio
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://premiumtrustbank.com/">
-                              Company Website
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://meetjuliet.netlify.app">
-                              Portfolio
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://premiumtrustbank.com/">
-                              Company Website
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://meetjuliet.netlify.app">
-                              Portfolio
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://premiumtrustbank.com/">
-                              Company Website
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://meetjuliet.netlify.app">
-                              Portfolio
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a href="https://premiumtrustbank.com/">
-                              Company Website
+                            <a href="https://bvninbranch.web.app/">
+                              In-Branch BVN Verification Service
                             </a>
                           </td>
                         </tr>
@@ -368,12 +298,6 @@ const Dashboard = () => {
                   </div>
                   <div className="card-body table-responsive">
                     <table className="table table-hover">
-                      {/* <thead className="text-default">
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Phone</th>
-                      </thead> */}
                       <tbody>
                         <tr>
                           {/* <td>1</td> */}
