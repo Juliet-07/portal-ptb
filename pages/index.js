@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
-import Link from "next/link";
 import { FaRegEnvelope, FaSignInAlt } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
 
@@ -15,7 +15,8 @@ const Home = () => {
     const { name, value } = event.target;
     setProfile({ ...profile, [name]: value });
   };
-
+  const { username, password } = profile;
+  const router = useRouter();
   const login = () => {
     try {
       let url = "https://192.168.201.46/Intranet/User/login-user";
@@ -32,6 +33,7 @@ const Home = () => {
       })
         .then((res) => res.json())
         .then((json) => console.log(json));
+        router.push("/admin/dashboard")
     } catch (err) {
       console.log(err.message);
     }
@@ -57,34 +59,36 @@ const Home = () => {
           <div className=" w-100 bg-red-100 p-2 flex items-center mb-3">
             <FaRegEnvelope className="text-black m-2" />
             <input
-              name="username"
               type="text"
-              placeholder="Username"
               className="bg-gray-100 outline-none text-sm flex-1"
+              name="username"
+              placeholder="Username"
+              value={username}
               onChange={handleChange}
             />
           </div>
           <div className=" w-100 bg-red-100 p-2 flex items-center mb-3">
             <MdLockOutline className="text-black m-2" />
             <input
-              name="password"
               type="password"
-              placeholder="Password"
               className="bg-gray-100 outline-none text-sm flex-1"
+              name="password"
+              placeholder="Password"
+              value={password}
               onChange={handleChange}
             />
           </div>
-          <Link href="/admin/dashboard">
-            <a
-              type="submit"
-              className="submit"
-              onClick={() => {
-                login();
-              }}
-            >
-              <FaSignInAlt />
-            </a>
-          </Link>
+          {/* <Link href="/admin/dashboard"> */}
+          <button
+            type="button"
+            className="submit"
+            onClick={() => {
+              login();
+            }}
+          >
+            <FaSignInAlt />
+          </button>
+          {/* </Link> */}
         </form>
       </div>
     </div>

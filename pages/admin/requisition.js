@@ -248,7 +248,7 @@ const Requisition = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="/admin/posRequest">
                           POS/mCash/Master Pass Request
                         </a>
                       </li>
