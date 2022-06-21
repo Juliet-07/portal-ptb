@@ -20,7 +20,6 @@ const Home = () => {
   const login = () => {
     try {
       let url = "https://192.168.201.46/Intranet/User/login-user";
-      console.log(url);
       fetch(url, {
         method: "POST",
         body: JSON.stringify({
@@ -33,7 +32,7 @@ const Home = () => {
       })
         .then((res) => res.json())
         .then((json) => console.log(json));
-        router.push("/admin/dashboard")
+      router.push("/admin/dashboard")
     } catch (err) {
       console.log(err.message);
     }
@@ -78,7 +77,6 @@ const Home = () => {
               onChange={handleChange}
             />
           </div>
-          {/* <Link href="/admin/dashboard"> */}
           <button
             type="button"
             className="submit"
@@ -88,7 +86,6 @@ const Home = () => {
           >
             <FaSignInAlt />
           </button>
-          {/* </Link> */}
         </form>
       </div>
     </div>

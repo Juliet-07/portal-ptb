@@ -190,7 +190,13 @@ const PosForm = () => {
         <div className="main-panel">
           <div className="content mt-0">
             <div className="container-fluid">
-              <div className="col-lg-6 col-md-12">
+              <div className="flex justify-center align-middle mb-10 mt-4">
+                <h3 className="font-bold text-3xl">
+                  MERCHANT REGISTRATION FORM
+                </h3>
+              </div>
+              {/* <div className="col-lg-6 col-md-12 mt-5 left-96"> */}
+              <form className="col-lg-6 col-md-12 mt-5 left-96">
                 <div className="accordion" id="accordionExample">
                   <div className="accordion-item">
                     <h2 className="accordion-header" id="headingOne">
@@ -212,25 +218,275 @@ const PosForm = () => {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        <div className="form-floating mb-3">
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="floatingInput"
-                            placeholder="name@example.com"
-                          />
-                          <label for="floatingInput">
-                            Name of Merchant/Company:
-                          </label>
-                        </div>
-                        <div className="form-floating">
-                          <input
-                            type="password"
-                            className="form-control"
-                            id="floatingPassword"
-                            placeholder="Password"
-                          />
-                          <label for="floatingPassword">RC Number:</label>
+                        <div className="row">
+                          <div className="col s12">
+                            <div className="row">
+                              <div className="input-field col s6">
+                                <input id="name" type="text" />
+                                <label htmlFor="name">
+                                  Name of Merchant/Company:
+                                </label>
+                              </div>
+                              <div className="input-field col s6">
+                                <input id="rcNumber" type="text" />
+                                <label htmlFor="rcNumber">RC Number:</label>
+                              </div>
+                            </div>
+                            <div className="row">
+                              <div className="input-field col s6">
+                                <input id="trade" type="text" />
+                                <label htmlFor="trade">
+                                  Trading Name & Address:
+                                </label>
+                              </div>
+                            </div>
+                            <div>
+                              <p className="text-sm">
+                                Business Segment/Industry (Tick as appropriate)
+                              </p>
+                            </div>
+                            <hr />
+                            <div className="form-check form-check-inline mt-3">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Stores & Supermarket</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Embassy</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Bookshop</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Club/bar</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Hospitals</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Legal Services</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Fast Food</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Jewelry</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Logistics/Courier</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Boutique</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Salon</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Hotel/Guest House</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Bureau de Change</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Security Services</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Airlines</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Catering Services</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Interior Decoration</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Travel Agencies</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Church /NGO</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Gym</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Telecoms</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Education/Schools</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Cyber Cafe</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Wholesaler</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Cosmetics</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Automobile Parts</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Restaurants</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Electronics</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Laundry</span>
+                                </label>
+                              </p>
+                            </div>
+                            <div className="form-check form-check-inline">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span>Fuel Stations</span>
+                                </label>
+                              </p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -255,18 +511,46 @@ const PosForm = () => {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        <strong>
-                          This is the second item's accordion body.
-                        </strong>{" "}
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the{" "}
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                        {/* <form> */}
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="namePri" type="text" />
+                            <label htmlFor="namePri">
+                              Name of Primary Contact:
+                            </label>
+                          </div>
+                          <div className="input-field col s6">
+                            <input id="nameSec" type="text" />
+                            <label htmlFor="nameSec">
+                              Name of Secondary Contact:
+                            </label>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="role1" type="text" />
+                            <label htmlFor="role1">Designation:</label>
+                          </div>
+                          <div className="input-field col s6">
+                            <input id="role2" type="text" />
+                            <label htmlFor="role2">Designation:</label>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="phone1" type="text" />
+                            <label htmlFor="phone1">
+                              Office Telephone/ Extension:
+                            </label>
+                          </div>
+                          <div className="input-field col s6">
+                            <input id="phone2" type="text" />
+                            <label htmlFor="phone2">
+                              Office Telephone/ Extension::
+                            </label>
+                          </div>
+                        </div>
+                        {/* </form> */}
                       </div>
                     </div>
                   </div>
@@ -290,18 +574,26 @@ const PosForm = () => {
                       data-bs-parent="#accordionExample"
                     >
                       <div className="accordion-body">
-                        <strong>
-                          This is the third item's accordion body.
-                        </strong>{" "}
-                        It is hidden by default, until the collapse plugin adds
-                        the appropriate classes that we use to style each
-                        element. These classes control the overall appearance,
-                        as well as the showing and hiding via CSS transitions.
-                        You can modify any of this with custom CSS or overriding
-                        our default variables. It's also worth noting that just
-                        about any HTML can go within the{" "}
-                        <code>.accordion-body</code>, though the transition does
-                        limit overflow.
+                        <div className="row">
+                          {/* <form className="col s12"> */}
+                          <div className="row">
+                            <div className="input-field col s6">
+                              <input id="describe" type="text" />
+                              <label fhtmlForor="describe">
+                                Product Description
+                              </label>
+                            </div>
+                          </div>
+                          <div className="row">
+                            <div className="input-field col s6">
+                              <input id="terminalNo" type="text" />
+                              <label htmlFor="terminalNo">
+                                POS Terminal Number
+                              </label>
+                            </div>
+                          </div>
+                          {/* </form> */}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -326,15 +618,32 @@ const PosForm = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>{" "}
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                      <div className="row">
+                        {/* <form className="col s12"> */}
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="location" type="text" />
+                            <label htmlFor="location">
+                              Location of Terminal
+                            </label>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="terminalPersonnel" type="text" />
+                            <label htmlFor="terminalNo">
+                              Terminal Personnel
+                            </label>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="phone3" type="text" />
+                            <label htmlFor="phone3">Phone Number</label>
+                          </div>
+                        </div>
+                        {/* </form> */}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -358,22 +667,47 @@ const PosForm = () => {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>{" "}
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                      <div className="row">
+                        {/* <form className="col s12"> */}
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="accountName" type="text" />
+                            <label htmlFor="accountName">Account Name</label>
+                          </div>
+                          <div className="input-field col s6">
+                            <input id="accountNumber" type="text" />
+                            <label htmlFor="accountNumber">
+                              Account Number
+                            </label>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="accountName" type="text" />
+                            <label htmlFor="accountType">Account Type</label>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="input-field col s6">
+                            <input id="email" type="email" />
+                            <label htmlFor="email">Email Address</label>
+                          </div>
+                        </div>
+                        {/* </form> */}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <button className="btn bg-primary" type="submit" name="action">
+                  Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
+
+        {/* </div> */}
       </div>
     </>
   );

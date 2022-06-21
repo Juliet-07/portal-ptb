@@ -247,11 +247,13 @@ const Requisition = () => {
                           Instant Pin
                         </a>
                       </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="/admin/posRequest">
-                          POS/mCash/Master Pass Request
-                        </a>
-                      </li>
+                      <Link href="/admin/posRequest">
+                        <li className="nav-item">
+                          <a className="nav-link" href="#">
+                            POS/mCash/Master Pass Request
+                          </a>
+                        </li>
+                      </Link>
                       <li className="nav-item">
                         <a className="nav-link" href="#">
                           Retail Loan Request
