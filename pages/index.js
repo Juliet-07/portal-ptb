@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+// import { useForm } from "react-hook-form";
 import Head from "next/head";
 import { FaRegEnvelope, FaSignInAlt } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
+import { useForm } from "react-hook-form";
 
 const Home = () => {
+  // const { handleSubmit } = useForm();
   const initialValues = {
     username: "",
     password: "",
@@ -32,7 +35,7 @@ const Home = () => {
       })
         .then((res) => res.json())
         .then((json) => console.log(json));
-      router.push("/admin/dashboard")
+      // router.push("/admin/dashboard")
     } catch (err) {
       console.log(err.message);
     }
@@ -77,13 +80,7 @@ const Home = () => {
               onChange={handleChange}
             />
           </div>
-          <button
-            type="button"
-            className="submit"
-            onClick={() => {
-              login();
-            }}
-          >
+          <button type="button" className="submit" onClick={login}>
             <FaSignInAlt />
           </button>
         </form>

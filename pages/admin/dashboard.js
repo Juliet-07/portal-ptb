@@ -13,7 +13,7 @@ import {
 } from "react-icons/md";
 import { BsCart4, BsFillPieChartFill } from "react-icons/bs";
 import { FaJournalWhills, FaPeopleArrows } from "react-icons/fa";
-import { FcOpenedFolder } from "react-icons/fc";
+import { FcOpenedFolder, FcManager } from "react-icons/fc";
 import { SiFormstack } from "react-icons/si";
 import { GiBookmark } from "react-icons/gi";
 import { GrUserSettings } from "react-icons/gr";
@@ -165,6 +165,16 @@ const Dashboard = () => {
                       <MdPerson />
                     </i>
                     <p>Profile</p>
+                  </a>
+                </li>
+              </Link>
+              <Link href="/admin/manager">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <i className="material-icons">
+                      <FcManager />
+                    </i>
+                    <p>Profile Manager</p>
                   </a>
                 </li>
               </Link>
